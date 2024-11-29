@@ -3,7 +3,7 @@ import { useFetch } from '../util-hooks/useFetch';
 
 const MeetupsContext = createContext({
   meetups: [],
-  addMetup: (meetup) => {}
+  addMeetup: (meetup) => {}
 });
 
 export function MeetupsContextProvider({ children }) {
@@ -16,13 +16,13 @@ export function MeetupsContextProvider({ children }) {
     }
   }, [data]);
 
-  const addMetup = (meetup) => {
+  const addMeetup = (meetup) => {
     setMeetups((prevMeetups) => [...prevMeetups, meetup]);
   };
 
   const context = {
     meetups,
-    addMetup
+    addMeetup
   };
 
   return (
