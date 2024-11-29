@@ -2,11 +2,14 @@ import { NavLink } from 'react-router-dom';
 
 import classes from './MainNavigation.module.css';
 import useHideOnScroll from './../../util-hooks/useHideOnScroll';
+import { useContext } from 'react';
+import FavoritesContext from '../../contexts/FavoritesContext';
 
-const SCROLL_AMOUNT_TO_HIDE = 100;
+const SCROLL_AMOUNT_TO_HIDE = 50;
 
 export default function MainNavigation() {
   const showNavbar = useHideOnScroll(SCROLL_AMOUNT_TO_HIDE);
+  const { favorites } = useContext(FavoritesContext);
 
   return (
     <nav
@@ -30,7 +33,8 @@ export default function MainNavigation() {
           </li>
           <li>
             <NavLink to="/favorites" className={classes.link}>
-              My Favorites <span className={classes.badge}>{0}</span>
+              My Favorites{' '}
+              <span className={classes.badge}>{favorites.length}</span>
             </NavLink>
           </li>
         </ul>
