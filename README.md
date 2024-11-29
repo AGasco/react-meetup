@@ -28,18 +28,33 @@ The application adheres to SOLID and DRY principles, promoting clean and maintai
 ### Steps
 
 1. Clone the repository:
-   `git clone https://github.com/AGasco/technical-test-ac`
+   
+   ```
+   git clone https://github.com/AGasco/technical-test-ac
+   ```
 
-2. Navigate to the project folder:
-   `cd technical-test-ac`
+3. Navigate to the project folder:
+   
+   ```
+   cd technical-test-ac
+   ```
 
-3. Install dependencies
-   `npm install`
+5. Install dependencies
+   
+   ```
+   npm install
+   ```
 
-4. Start the app
-   `npm start`
+7. Start the app
+   
+   ```
+   npm start
+   ```
 
 ### Prerequisites
 
 To run tests:
-`npm test`
+
+```
+npm test
+```
