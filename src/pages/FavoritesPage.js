@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import MeetupList from '../components/meetups/MeetupList';
+import { MeetupList } from '../components';
 import { FavoritesContext } from '../contexts';
 import classes from './../components/meetups/MeetupList.module.css';
 

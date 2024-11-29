@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { ClipLoader } from 'react-spinners';
-import MeetupList from '../components/meetups/MeetupList';
+import { MeetupList } from '../components';
 import { MeetupsContext } from '../contexts';
 import classes from './../components/meetups/MeetupList.module.css';
 
