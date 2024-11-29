@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { ClipLoader } from 'react-spinners';
-import FavoritesContext from '../../contexts/FavoritesContext';
+import { FavoritesContext } from '../../contexts';
 import Card from '../ui/Card';
 import classes from './MeetupItem.module.css';
 

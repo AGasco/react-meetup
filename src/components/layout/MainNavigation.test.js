@@ -2,8 +2,10 @@
 /* eslint-disable testing-library/no-debugging-utils */
 import { mount } from 'enzyme';
 import { MemoryRouter } from 'react-router-dom';
-import { MeetupsContextProvider } from './../../contexts/MeetupsContext';
-import { FavoritesContextProvider } from './../../contexts/FavoritesContext';
+import {
+  FavoritesContextProvider,
+  MeetupsContextProvider
+} from './../../contexts';
 import App from './../../App';
 
 test('renders NewMeetupsPage when navigated to /new-meetup', () => {

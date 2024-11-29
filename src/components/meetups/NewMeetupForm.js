@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import MeetupsContext from '../../contexts/MeetupsContext';
+import { MeetupsContext } from '../../contexts';
 import Card from '../ui/Card';
 import classes from './NewMeetupForm.module.css';
 

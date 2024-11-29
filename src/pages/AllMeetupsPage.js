@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ClipLoader } from 'react-spinners';
 import MeetupList from '../components/meetups/MeetupList';
-import MeetupsContext from '../contexts/MeetupsContext';
+import { MeetupsContext } from '../contexts';
 import classes from './../components/meetups/MeetupList.module.css';
 
 export default function AllMeetupsPage() {
