@@ -5,11 +5,14 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 import './index.css';
+import { FavoritesContextProvider } from './contexts/FavoritesContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <FavoritesContextProvider>
+        <App />
+      </FavoritesContextProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
