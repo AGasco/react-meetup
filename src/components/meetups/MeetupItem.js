@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { ClipLoader } from 'react-spinners';
 import FavoritesContext from '../../contexts/FavoritesContext';
 import Card from '../ui/Card';
 import classes from './MeetupItem.module.css';
@@ -7,13 +8,20 @@ export default function MeetupItem({ item }) {
   const favoritesContext = useContext(FavoritesContext);
   const isFavorite = favoritesContext.itemIsFavorite(item?.id);
 
+  if (!item)
+    return (
+      <div className={classes.spinner}>
+        <ClipLoader color={'#77002e'} size={80} />
+      </div>
+    );
+
   const toggleFavorite = () => {
     if (isFavorite) favoritesContext.removeFavorite(item?.id);
     else favoritesContext.addFavorite(item);
   };
 
   return (
-    <li className={classes.item} data-test="meet-up-item">
+    <li className={classes.item} data-testid="meet-up-item">
       <Card>
         <div className={classes.image}>
           <img src={item.image} alt={item.title} />
