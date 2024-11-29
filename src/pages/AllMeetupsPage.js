@@ -1,5 +1,5 @@
 import { ClipLoader } from 'react-spinners';
-import MeetupItem from '../components/meetups/MeetupItem';
+import MeetupList from '../components/meetups/MeetupList';
 import classes from './../components/meetups/MeetupList.module.css';
 import { useFetch } from './../util-hooks/useFetch';
 
@@ -21,9 +21,7 @@ export default function AllMeetupsPage() {
     <section>
       <h1>All Meetups</h1>
       <ul className={classes.list}>
-        {meetups.map((meetup) => (
-          <MeetupItem item={meetup} />
-        ))}
+        <MeetupList meetups={meetups} />
       </ul>
     </section>
   );
