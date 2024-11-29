@@ -1,10 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-
-import AllMeetupsPage from './pages/AllMeetupsPage';
-import FavoritesPage from './pages/Favorites';
-import NewMeetupsPage from './pages/NewMeetup';
-
-import Layout from './components/layout/Layout';
+import { Layout } from './components';
+import { AllMeetupsPage, FavoritesPage, NewMeetupPage } from './pages';
 
 function App() {
   return (
@@ -12,7 +8,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" exact element={<AllMeetupsPage />} />
-          <Route path="/new-meetup" element={<NewMeetupsPage />} />
+          <Route path="/new-meetup" element={<NewMeetupPage />} />
           <Route path="/favorites" element={<FavoritesPage />} />
         </Routes>
       </Layout>

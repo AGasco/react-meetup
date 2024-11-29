@@ -1,9 +1,8 @@
-import { NavLink } from 'react-router-dom';
-
-import classes from './MainNavigation.module.css';
-import useHideOnScroll from './../../util-hooks/useHideOnScroll';
 import { useContext } from 'react';
-import FavoritesContext from '../../contexts/FavoritesContext';
+import { NavLink } from 'react-router-dom';
+import { FavoritesContext } from '../../contexts';
+import { useHideOnScroll } from '../../util-hooks';
+import classes from './MainNavigation.module.css';
 
 const SCROLL_AMOUNT_TO_HIDE = 50;
 

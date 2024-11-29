@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ClipLoader } from 'react-spinners';
-import FavoritesContext from '../../contexts/FavoritesContext';
-import Card from '../ui/Card';
+import { Card } from '../../components';
+import { FavoritesContext } from '../../contexts';
 import classes from './MeetupItem.module.css';
 
 export default function MeetupItem({ item }) {

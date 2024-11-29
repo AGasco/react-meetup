@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { EVENT_SCROLL } from '../utils/constants';
+import { EVENT_SCROLL } from '../constants';
 
-const useHideOnScroll = (scrollAmount) => {
+export const useHideOnScroll = (scrollAmount) => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -22,5 +22,3 @@ const useHideOnScroll = (scrollAmount) => {
 
   return show;
 };
-
-export default useHideOnScroll;

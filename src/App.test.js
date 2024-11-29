@@ -1,12 +1,11 @@
 /* eslint-disable testing-library/await-async-query */
 /* eslint-disable testing-library/no-debugging-utils */
+import { mount, shallow } from 'enzyme';
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import App from './App';
-import Layout from './components/layout/Layout';
 import { BrowserRouter } from 'react-router-dom';
-import { FavoritesContextProvider } from './contexts/FavoritesContext';
-import { MeetupsContextProvider } from './contexts/MeetupsContext';
+import App from './App';
+import { Layout } from './components';
+import { FavoritesContextProvider, MeetupsContextProvider } from './contexts';
 
 /**
  * Helper function to create a shallow wrapper for the App component.

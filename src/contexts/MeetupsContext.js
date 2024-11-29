@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react';
-import { useFetch } from '../util-hooks/useFetch';
+import { useFetch } from '../util-hooks';
 
 const MeetupsContext = createContext({
   meetups: [],

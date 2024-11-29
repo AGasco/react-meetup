@@ -2,7 +2,7 @@
 /* eslint-disable testing-library/no-debugging-utils */
 import { mount } from 'enzyme';
 import React from 'react';
-import FavoritesContext from '../../contexts/FavoritesContext';
+import { FavoritesContext } from '../../contexts';
 import MeetupItem from './MeetupItem';
 
 // Mock data for a meetup item
