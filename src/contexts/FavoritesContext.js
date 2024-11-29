@@ -11,26 +11,26 @@ const FavoritesContext = createContext({
 export const FavoritesContextProvider = ({ children }) => {
   const [userFavorites, setUserFavorites] = useState([]);
 
-  const addFavoriteHandler = (meetup) => {
+  const addFavorite = (meetup) => {
     setUserFavorites((prevFavorites) => [...prevFavorites, meetup]);
   };
 
-  const removeFavoriteHandler = (meetupId) => {
+  const removeFavorite = (meetupId) => {
     setUserFavorites((prevFavorites) =>
       prevFavorites.filter((meetup) => meetup.id !== meetupId)
     );
   };
 
-  const itemIsFavoriteHandler = (meetupId) => {
+  const itemIsFavorite = (meetupId) => {
     return userFavorites.some((meetup) => meetup.id === meetupId);
   };
 
   const context = {
     favorites: userFavorites,
     totalFavorites: userFavorites.length,
-    addFavorite: addFavoriteHandler,
-    removeFavorite: removeFavoriteHandler,
-    itemIsFavorite: itemIsFavoriteHandler
+    addFavorite,
+    removeFavorite,
+    itemIsFavorite
   };
 
   return (

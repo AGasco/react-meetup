@@ -8,8 +8,6 @@ export default function AllMeetupsPage() {
     url: '/data.json'
   });
 
-  console.log('data', meetups);
-
   if (!meetups)
     return (
       <div className={classes.spinner}>
