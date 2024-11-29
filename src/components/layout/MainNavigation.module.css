@@ -5,6 +5,12 @@
   height: 5rem;
   background-color: #77002e;
   z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.hide {
+  transform: translateY(-100%);
 }
 
 .content {
