@@ -6,7 +6,9 @@ export default function MainNavigation() {
   return (
     <nav className={classes.navbar} data-test="navigation-navbar">
       <div className={classes.content}>
-        <div className={classes.logo}>React Meetups</div>
+        <NavLink to="/" className={classes.logo}>
+          React Meetups
+        </NavLink>
         <ul>
           <li>
             <NavLink to="/" className={classes.link}>
