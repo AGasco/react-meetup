@@ -4,7 +4,7 @@ import { mount, shallow } from 'enzyme';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import Layout from './components/layout/Layout';
+import { Layout } from './components';
 import { FavoritesContextProvider, MeetupsContextProvider } from './contexts';
 
 /**
