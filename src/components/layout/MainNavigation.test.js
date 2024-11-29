@@ -1,3 +1,5 @@
+/* eslint-disable testing-library/await-async-query */
+/* eslint-disable testing-library/no-debugging-utils */
 import { mount } from 'enzyme';
 import { MemoryRouter } from 'react-router-dom';
 import { MeetupsContextProvider } from './../../contexts/MeetupsContext';
